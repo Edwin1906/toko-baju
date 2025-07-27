@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bayar dengan DANA</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+      }
+      .container {
+        background: white;
+        max-width: 500px;
+        margin: 80px auto;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .btn-bayar {
+        background: #08c18a;
+        color: white;
+        border: none;
+        padding: 12px 25px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 6px;
+        margin-top: 20px;
+      }
+      img {
+        max-width: 200px;
+        margin-top: 15px;
+      }
+      .nomor {
+        font-size: 14px;
+        color: #555;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Pembayaran via DANA</h2>
+      <p>Produk: Kaos Feed Me</p>
+      <p>Harga: Rp65.000</p>
+
+      <!-- Gambar QR DANA -->
+      <img src="qris_dana.jpg" alt="QR DANA" />
+
+      <!-- Nomor DANA -->
+      <p class="nomor">Nomor DANA: <strong>087849067078</strong></p>
+
+      <!-- Link DANA langsung -->
+      <a
+        href="dana://openURL?url=https://link.dana.id/minta?full_url=https://qr.dana.id/v1/281012012021041000729056"
+      >
+        <button class="btn-bayar">Bayar Sekarang via DANA</button>
+      </a>
+
+      <p class="nomor">
+        Klik tombol di atas akan membuka aplikasi DANA di HP Anda.
+      </p>
+    </div>
+  </body>
+</html>
